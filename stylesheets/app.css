@@ -101,6 +101,8 @@ input {
 	margin: .5em 0;
 	outline: 3px solid #efefef;
 	border: 1px solid #ccc;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
 }
 [type=submit] {
 	outline: 3px solid rgba(0,0,0,0.1);
@@ -124,6 +126,8 @@ input {
 	color: white;
 	/*text-shadow: 0 1px 0 rgba(0,0,0,0.3), 0 2px 1px rgba(0,0,0,0.125), 0 3px 2px rgba(0,0,0,0.075);*/
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
 }
 [type=submit]:hover, [type=submit]:focus {
 	/*box-shadow: 0 1px 0 rgba(255,255,255,0.35) inset, 0 -3px 0 rgba(0,0,0,0.2) inset, 0 0 3px rgba(0,0,0,0.2), 0 0 10px rgba(0,0,0,0.1);*/
@@ -175,9 +179,6 @@ input:focus {
 	cursor: default;
 }
 .abs {
-	position: absolute;
-	top: .7em;
-	right: 0;
 	font-size: 80%;
 	opacity: .75;
 }
@@ -268,6 +269,11 @@ hr:before {
 		padding: 3em 0;
 		width: 34em;
 		margin: 0 auto;
+	}
+	.abs {
+		position: absolute;
+		top: .7em;
+		right: 0;
 	}
 }
 
