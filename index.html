@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>LeagueApps Login | Sports League Management &amp; Registration Software</title>
+	<link href="stylesheets/app.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<header role="banner">
+		<h2>
+			<a href="">
+				<img src="images/logo.png" id="logo" alt="" />
+			</a>
+		</h2>
+	</header>
+	<div class="wrap" role="main">
+		<form>
+			<fieldset>
+				<label for="site-id">
+					<span>Enter your Site ID:</span>
+					<input type="text" id="site-id" name="site-id" placeholder="Your site ID" />
+					<span class="icon-mail-forward arrow"></span>
+					<div class="small">
+						<!--This is the custom URL for your site that you chose. For example, <span><strong>foo</strong>.leagueapps.com</span>.-->
+						<h3>What is a Site ID?</h3>
+						<p>Your Site ID is the sub-domain you chose when you created your LeagueApps account. If you chose "mysite.leagueapps.com" as your site's address, then your ID is simply "mysite".</p>
+						<h3>What if I have a custom domain?</h3>
+						<p>Whether you use a custom domain or your default leagueapps.com address, your Site ID is still the same value you entered when you signed up.</p>
+					</div>
+				</label>
+			</fieldset>
+			<fieldset>
+				<label for="email">
+					<span>Enter your Email or Username:</span>
+					<input type="email" id="email" name="email" placeholder="Your email or username" />
+					<small>
+						You can login with your email address (that you registered with) or your username.
+					</small>
+				</label>
+			</fieldset>
+			<fieldset>
+				<label for="password">
+					<span>Enter your Password:</span>
+					<input type="password" id="password" name="password" placeholder="Your 8 character password" />
+					<small>
+						This is 6-to-8 character password with at least one uppercase letter, at least one special character ($,%,_,&amp;), and at least one number.
+					</small>
+				</label>
+				<label for="unmask" class="abs">
+					<input type="checkbox" id="unmask" />
+					Show password?
+				</label>
+			</fieldset>
+			<fieldset>
+				<input type="submit" id="submit" value="Log into my site" />
+			</fieldset>
+		</form>
+		<hr />
+		<form>
+			<fieldset>
+				<label for="forgot-email">
+					<span>Forget the password you used? No worries, let&rsquo;s reset it.</span>
+					<input type="email" id="forgot-email" name="forgot-email" placeholder="Your email used to register" />
+				</label>
+			</fieldset>
+		</form>
+	</div>
+	<!-- scripts -->
+	<script src="javascripts/jquery.js"></script>
+	<script src="javascripts/app.js"></script>
+</body>
+</html>
