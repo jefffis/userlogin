@@ -60,7 +60,7 @@ label > span, small {
 	display: block;
 }
 label > span {
-	font-size: 1.25em;
+	font-size: 1em;
 	font-family: 'Roboto Slab', serif;
 	letter-spacing: -1px;
 	cursor: pointer;
@@ -274,6 +274,9 @@ hr:before {
 		position: absolute;
 		top: .7em;
 		right: 0;
+	}
+	label > span {
+		font-size: 1.25em;
 	}
 }
 
