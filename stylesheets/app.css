@@ -31,7 +31,7 @@ html {
 	border-top: 5px solid #2d6cbe;
 }
 body {
-	padding: 3em 1.5em;
+	padding: 1em 2em;
 }
 h1, h2, h3 {
 	line-height:1.1;
@@ -47,7 +47,7 @@ h3 { font-size:1.5em; }
 
 header img {
 	display: block;
-	margin: 0 auto 2em;
+	margin: 0 auto;
 }
 
 fieldset {
@@ -269,14 +269,28 @@ hr:before {
 		width: 34em;
 		margin: 0 auto;
 	}
+}
+
+@media screen and (min-width: 65em){
 	.small {
 		position: absolute;
-		right: -23em;
+		right: -15em;
 		top: 0;
-		width: 20em;
+		width: 12em;
+	}
+	header img {
+		margin-bottom: 2em;
 	}
 	.arrow {
 		display: block;
+	}
+}
+
+@media screen and (min-width: 85em){
+	.small {
+		right: -23em;
+		top: 0;
+		width: 20em;
 	}
 }
 
